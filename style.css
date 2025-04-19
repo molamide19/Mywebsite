@@ -4,3 +4,10 @@ body {
   text-align: center;
   margin-top: 50px;
 }
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Arial', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
