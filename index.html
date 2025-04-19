@@ -1,85 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Molamide - Order Verification Numbers</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #F4F4F4;
-      margin: 0;
-      padding: 0;
-      color: #333333;
-    }
-
-    header {
-      background-color: #0A2342;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 22px;
-    }
-
-    .content {
-      padding: 20px 15px;
-    }
-
-    .payment-box {
-      background: #FFF8E1;
-      padding: 15px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      border-left: 5px solid #F9A825;
-    }
-
-    .payment-box p {
-      margin: 5px 0;
-      font-size: 15px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 1050px;
-      border: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #aaa;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moreira - Number Verification Service</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>MOREIRA</h1>
+    </header>
 
-  <header>
-    <h1>Molamide</h1>
-    <p>Instant Verification Numbers for Any Platform</p>
-  </header>
+    <section id="service-selection">
+        <h2>Select Verification Service</h2>
+        <p>Choose the type of service you need:</p>
+        </section>
 
-  <div class="content">
-    <div class="payment-box">
-      <h3>Payment Info</h3>
-      <p><strong>Account Name:</strong> Molamide</p>
-      <p><strong>Bank:</strong> Opay</p>
-      <p><strong>Account Number:</strong> 1000388883</p>
-      <p style="margin-top:10px; color:#777;">Make your payment, then complete the form below.</p>
-    </div>
+    <section id="site-details">
+        <h2>Enter Site Details</h2>
+        <label for="site-url">Website URL:</label>
+        <input type="url" id="site-url" name="site-url" placeholder="e.g., example.com">
+        </section>
 
-    <!-- Embed Typeform here -->
-    <div data-tf-widget="YOUR_TYPEFORM_ID" data-tf-opacity="100" data-tf-iframe-props="title=Molamide Order Form" style="width:100%;height:500px;"></div>
-    <script src="//embed.typeform.com/next/embed.js"></script>
-  </div>
+    <section id="number-selection">
+        <h2>Available Numbers</h2>
+        </section>
 
-  <footer>
-    &copy; 2025 Molamide. All rights reserved.
-  </footer>
+    <section id="payment">
+        <h2>Payment via Bank Transfer</h2>
+        <p>Please make a transfer to the following account:</p>
+        <p><strong>Bank Name:</strong> OPay</p>
+        <p><strong>Account Number:</strong> 0048483993</p>
+        <p>After making the transfer, please fill out the form below:</p>
+        <form id="payment-form">
+            <label for="transfer-amount">Amount Transferred:</label>
+            <input type="number" id="transfer-amount" name="transfer-amount" required>
 
+            <label for="transfer-reference">Transaction Reference (if any):</label>
+            <input type="text" id="transfer-reference" name="transfer-reference">
+
+            <button type="submit">Submit Payment Details</button>
+        </form>
+        <div id="payment-status"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Moreira</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
