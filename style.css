@@ -1,13 +1,86 @@
+/* General Styles */
 body {
-  background-color: #f0f0f0;
   font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  margin-top: 50px;
 }
-body {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  font-family: 'Arial', sans-serif;
+
+h1, h2 {
+  color: #2d2d2d;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #764ba2;
+  font-weight: bold;
+}
+
+button {
+  background-color: #764ba2;
   color: white;
-  text-align: center;
-  padding: 50px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+button:hover {
+  background-color: #667eea;
+}
+
+/* Header */
+header {
+  background-color: #764ba2;
+  color: white;
+  padding: 40px;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+/* Service Information Section */
+.service-info {
+  background-color: #fff;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-info ul {
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Pricing Section */
+.pricing {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.contact {
+  background-color: #ffffff;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
