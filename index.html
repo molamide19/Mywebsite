@@ -3,51 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moreira - Number Verification Service</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Molamide - Buy Verification Numbers</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>MOREIRA</h1>
+        <h1>Molamide</h1>
+        <p>Buy verification numbers for WhatsApp, Facebook, Gmail, Telegram, and more.</p>
     </header>
 
-    <section id="service-selection">
-        <h2>Select Verification Service</h2>
-        <p>Choose the type of service you need:</p>
-        </section>
-
-    <section id="site-details">
-        <h2>Enter Site Details</h2>
-        <label for="site-url">Website URL:</label>
-        <input type="url" id="site-url" name="site-url" placeholder="e.g., example.com">
-        </section>
-
-    <section id="number-selection">
-        <h2>Available Numbers</h2>
-        </section>
-
-    <section id="payment">
-        <h2>Payment via Bank Transfer</h2>
-        <p>Please make a transfer to the following account:</p>
-        <p><strong>Bank Name:</strong> OPay</p>
-        <p><strong>Account Number:</strong> 0048483993</p>
-        <p>After making the transfer, please fill out the form below:</p>
-        <form id="payment-form">
-            <label for="transfer-amount">Amount Transferred:</label>
-            <input type="number" id="transfer-amount" name="transfer-amount" required>
-
-            <label for="transfer-reference">Transaction Reference (if any):</label>
-            <input type="text" id="transfer-reference" name="transfer-reference">
-
-            <button type="submit">Submit Payment Details</button>
-        </form>
-        <div id="payment-status"></div>
+    <!-- Platforms List Section -->
+    <section id="platforms">
+        <h2>Supported Platforms</h2>
+        <ul>
+            <li><img src="whatsapp-icon.png" alt="WhatsApp"> WhatsApp</li>
+            <li><img src="facebook-icon.png" alt="Facebook"> Facebook</li>
+            <li><img src="gmail-icon.png" alt="Gmail"> Gmail</li>
+            <li><img src="telegram-icon.png" alt="Telegram"> Telegram</li>
+            <!-- Add more platforms as needed -->
+        </ul>
     </section>
 
+    <!-- Order Form Section -->
+    <section id="order-form">
+        <h2>Order Verification Number</h2>
+        <form action="thankyou.html" method="GET">
+            <label for="platform">Select Platform:</label>
+            <select id="platform" name="platform">
+                <option value="whatsapp">WhatsApp</option>
+                <option value="facebook">Facebook</option>
+                <option value="gmail">Gmail</option>
+                <option value="telegram">Telegram</option>
+                <!-- Add more options as needed -->
+            </select><br>
+
+            <label for="email">Enter Your Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <!-- Payment Instructions Section -->
+    <section id="payment">
+        <h2>Payment Instructions</h2>
+        <p>After placing your order, please make a payment to the following details:</p>
+        <ul>
+            <li>Account Number: 1000388883</li>
+            <li>Bank: Opay</li>
+            <li>Account Name: Molamide</li>
+        </ul>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <ol>
+            <li>Choose a platform</li>
+            <li>Fill out the order form</li>
+            <li>Make payment</li>
+            <li>Receive your verification number via email</li>
+        </ol>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li><strong>Is it safe?</strong> Yes, we ensure that your information is kept confidential.</li>
+            <li><strong>How long does it take?</strong> Verification numbers are delivered within minutes.</li>
+            <li><strong>What if the code doesn’t arrive?</strong> Contact us via email and we’ll resolve it.</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Moreira</p>
+        <p>Contact us at <a href="mailto:molamide.19@gmail.com">molamide.19@gmail.com</a></p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
